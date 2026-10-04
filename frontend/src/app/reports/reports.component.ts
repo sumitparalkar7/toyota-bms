@@ -1,0 +1,6 @@
+import { Component } from '@angular/core';
+@Component({selector:'app-reports',standalone:true,template:`
+<div class="page-head"><div><h1>Reports</h1><p>Generate daily, weekly and monthly BMS reports.</p></div></div>
+<section class="report-grid"><article class="report-card"><div class="report-icon">▤</div><h2>Daily Report</h2><p>Employee, fruit and waste summary for a selected date.</p><button class="btn primary">Generate PDF</button></article><article class="report-card"><div class="report-icon">▥</div><h2>Monthly Report</h2><p>Month-wise totals, averages and category analysis.</p><button class="btn primary">Generate PDF</button></article><article class="report-card"><div class="report-icon">▦</div><h2>Excel Export</h2><p>Download all records in Excel-friendly format.</p><button class="btn secondary">Export Excel</button></article></section>
+<section class="panel"><div class="panel-title">Report Filters</div><div class="form-grid"><label>From Date<input type="date"></label><label>To Date<input type="date"></label><label>Module<select><option>All</option><option>Employees</option><option>Fruits</option><option>Garbage</option></select></label></div></section>`})
+export class ReportsComponent{}
